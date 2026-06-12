@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte e Sustentável</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7f2;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#4caf50);
+    color:white;
+    text-align:center;
+    padding:30px;
+    position:relative;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+/* Instagram Icon */
+.ig-link{
+    position:absolute;
+    top:20px;
+    right:20px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    border:1px solid white;
+    padding:5px 10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.ig-link:hover{
+    background:white;
+    color:#2e7d32;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200')
+    center/cover;
+    color:white;
+}
+
+.hero h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+}
+
+section{
+    padding:50px 20px;
+}
+
+h2{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:25px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#4caf50;
+    margin-bottom:10px;
+}
+
+.video-card{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-card a{
+    text-decoration:none;
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+.video-card a:hover{
+    color:#ff9800;
+}
+
+.contato{
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+#mensagem{
+    text-align:center;
+    margin-top:15px;
+    color:green;
+    font-weight:bold;
+}
+
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    position:relative;
+}
+
+footer .ig-footer{
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform:translateY(-50%);
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    border:1px solid white;
+    padding:5px 10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+footer .ig-footer:hover{
+    background:white;
+    color:#2e7d32;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🌱 Agro Forte e Sustentável</h1>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <a class="ig-link" href="https://www.instagram.com/wendel_phl" target="_blank">
+        📸 @wendel_phl
+    </a>
+</header>
+
+<section class="hero">
+    <h2>Produzindo Hoje, Preservando o Amanhã</h2>
+    <p>
+        O agronegócio sustentável une tecnologia, produtividade e respeito ao meio ambiente,
+        garantindo alimentos de qualidade e preservação dos recursos naturais.
+    </p>
+</section>
+
+<section id="sobre">
+    <h2>Sobre o Projeto</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🌿 Sustentabilidade</h3>
+            <p>Uso responsável dos recursos naturais e preservação ambiental.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚜 Tecnologia</h3>
+            <p>Inovação para aumentar a produtividade e reduzir impactos ambientais.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌎 Futuro Verde</h3>
+            <p>Práticas agrícolas que garantem alimentos para as próximas gerações.</p>
+        </div>
+    </div>
+</section>
+
+<section id="produtos">
+    <h2>Produtos Sustentáveis</h2>
+
+    <div class="cards" id="produtosContainer">
+    </div>
+</section>
+
+<section id="videos">
+    <h2>🎥 Vídeos Especializados</h2>
+
+    <div class="cards">
+
+        <div class="video-card">
+            <h3>Agricultura Sustentável</h3>
+            <a href="https://www.youtube.com/results?search_query=agricultura+sustentavel"
+               target="_blank">
+               Assistir Conteúdo
+            </a>
+        </div>
+
+        <div class="video-card">
+            <h3>Plantio Orgânico</h3>
+            <a href="https://www.youtube.com/results?search_query=plantio+organico"
+               target="_blank">
+               Assistir Conteúdo
+            </a>
+        </div>
+
+        <div class="video-card">
+            <h3>Tecnologia no Agro</h3>
+            <a href="https://www.youtube.com/results?search_query=tecnologia+no+agronegocio"
+               target="_blank">
+               Assistir Conteúdo
+            </a>
+        </div>
+
+        <div class="video-card">
+            <h3>Agroecologia</h3>
+            <a href="https://www.youtube.com/results?search_query=agroecologia"
+               target="_blank">
+               Assistir Conteúdo
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+
+    <div class="contato">
+        <form id="formulario">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+            <button type="submit">
+                Enviar Mensagem
+            </button>
+        </form>
+
+        <p id="mensagem"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Agro Forte e Sustentável | Desenvolvido para GitHub Pages</p>
+    <a class="ig-footer" href="https://www.instagram.com/wendel_phl" target="_blank">
+        📸 @wendel_phl
+    </a>
+</footer>
+
+<script>
+const produtos = [
+{
+    nome:"🌽 Grãos Orgânicos",
+    descricao:"Produção sustentável com foco na qualidade e preservação ambiental."
+},
+{
+    nome:"🍅 Hortaliças Naturais",
+    descricao:"Cultivadas sem excesso de defensivos químicos."
+},
+{
+    nome:"🍎 Frutas Frescas",
+    descricao:"Produzidas com responsabilidade ambiental."
+},
+{
+    nome:"🥕 Legumes Sustentáveis",
+    descricao:"Cultivo eficiente com menor consumo de água."
+}
+];
+
+const container = document.getElementById("produtosContainer");
+
+produtos.forEach(produto => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+        <h3>${produto.nome}</h3>
+        <p>${produto.descricao}</p>
+    `;
+
+    container.appendChild(card);
+});
+
+document.getElementById("formulario")
+.add
